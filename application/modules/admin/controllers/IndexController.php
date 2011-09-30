@@ -1,6 +1,7 @@
 <?php
 
-class Admin_IndexController extends My_Controller_Action
+class Admin_IndexController 
+    extends My_Controller_Action
 {
 
     public function init()
@@ -11,6 +12,14 @@ class Admin_IndexController extends My_Controller_Action
 
     public function indexAction()
     {
+        /*
+        $this->_helper->layout->setLayout ( 'admin/default' );
+        $this->_helper->viewRenderer->setNeverRender(true);
+        $this->_helper->layout()->disableLayout();
+        */
+        
+        //$a = $this->render('static');
+        
         // action body
         $this->session->deneme = "sss";
         /*
