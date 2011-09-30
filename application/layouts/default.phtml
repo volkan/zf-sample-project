@@ -1,0 +1,53 @@
+<?php echo $this->doctype() . PHP_EOL; ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <?php // META AREA -------------------------------------------------------?>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <?php echo $this->headMeta(); ?>
+
+    <?php // TITLE AREA ------------------------------------------------------?>
+    <?php echo $this->headTitle('Sample'); ?>
+    <meta name="keywords" content="Sample" />
+    <meta name="description" content="Sample" />
+    <meta name="google-site-verification" content="" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="googlebot" content="NOODP" />
+    <meta name="revisit-after" content="1 Days" />
+    <meta name="rating" content="General" />
+    <meta name="distribution" content="GLOBAL" />
+    <meta name="copyright" content="Sample" />
+
+    <?php // LINK AREA -------------------------------------------------------?>
+    <link rel="stylesheet" type="text/css" href="<?php echo $this->cdn('style.css')->get()?>" media="screen" />    
+    <link rel="stylesheet" type="text/css" href="<?php echo $this->cdn('stanlemon-jgrowl-tip/css/jquery.jgrowl.css')->get('jquery-p')?>" media="screen" />
+    
+    <?php // STYLE AREA ------------------------------------------------------?>
+    <?php echo $this->headStyle(); ?>
+</head>
+<body data-jsModules="<?php echo $this->jsModules()?>">
+        <input type="hidden" id="baseUrl" value="<?php echo BASE_URL; ?>"/>
+        <input type="hidden" id="imageUrl" value="<?php echo BASE_URL; ?>"/>
+        <input type="hidden" id="contentImageUrl" value="<?php echo BASE_URL; ?>/public/assets/frontend/images/"/>    
+<div id="container">    
+
+
+<?php echo $this->layout()->content . PHP_EOL; ?>
+
+          
+
+<div id="clear"></div> 
+
+</div><!--container-->
+    <?php // SCRIPT AREA -----------------------------------------------------?>
+       <?php
+
+        echo $this->headScript()            
+            ->prependFile($this->cdn('frontend.js')->get())
+            ->prependFile($this->cdn('jquery.dataAttr.min.js')->get('jquery'))
+            ->prependFile($this->cdn('stanlemon-jgrowl-tip/js/jquery.jgrowl_minimized.js')->get('jquery-p'))
+            ->prependFile($this->cdn('jquery-1.6.2.min.js')->get('jquery'))                     
+            ;
+
+    ?>
+</body>
+</html>
