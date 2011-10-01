@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * Zend Framework Örnek Proje
+ * Zend Framework Sample Project
+ */
 class IndexController 
     extends My_Controller_Action
 {

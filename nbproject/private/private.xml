@@ -2,6 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
-        <file>file:/Users/volkan/htdocs/sampleproject/developer/scripts/backupDb.sh</file>
+        <file>file:/Users/volkan/htdocs/zf-sample-project/application/configs/application.ini</file>
+        <file>file:/Users/volkan/htdocs/zf-sample-project/application/controllers/ErrorController.php</file>
+        <file>file:/Users/volkan/htdocs/zf-sample-project/application/layouts/default.phtml</file>
+        <file>file:/Users/volkan/htdocs/zf-sample-project/application/controllers/DenemeIndexController.php</file>
+        <file>file:/Users/volkan/htdocs/zf-sample-project/application/controllers/IndexController.php</file>
+        <file>file:/Users/volkan/htdocs/zf-sample-project/application/modules/admin/controllers/IndexController.php</file>
+        <file>file:/Users/volkan/htdocs/zf-sample-project/public/assets/frontend/scripts/frontend.js</file>
     </open-files>
 </project-private>
