@@ -1,0 +1,44 @@
+    <div class="inner">
+        <form id="loginForm" enctype="application/x-www-form-urlencoded" action="<?php echo $this->escape($this->form->getAction()); ?>" method="<?php echo $this->escape($this->form->getMethod()); ?>">
+        <div class="form">
+            <!-- fields -->
+            <div class="fields">
+                <div class="field">
+                    <div class="label">
+                        <label for="email">Username:</label>
+                    </div>
+                    <div class="input">
+                        <?php echo $this->form->email; ?>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="label">
+                        <label for="password">Password:</label>
+                    </div>
+                    <div class="input">
+                        <?php echo $this->form->password; ?>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="checkbox">
+                        
+                        <?php echo $this->form->remember; ?>
+                        <label for="remember">Remember me</label>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <?php echo $this->form->submit; ?>
+                </div>
+            </div>
+            <!-- end fields -->
+            <!-- links -->
+            <div class="links">
+                
+            </div>
+            <div style="float:right">
+                <img src="<?php echo $this->cdn('logo.png')->get('b')?>" />
+            </div>
+            <!-- end links -->
+        </div>
+        </form>
+    </div>

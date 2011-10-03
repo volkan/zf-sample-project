@@ -1,0 +1,50 @@
+<?php echo $this->doctype() . PHP_EOL; ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>    
+    <?php // META AREA -------------------------------------------------------?>
+    <meta content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <?php echo $this->headMeta(); ?>
+
+    <?php // TITLE AREA ------------------------------------------------------?>
+    <?php echo $this->headTitle('Admin ')->setSeparator(' :: '); ?>
+
+    <?php // LINK AREA -------------------------------------------------------?>
+    
+    <?php // STYLE AREA ------------------------------------------------------?>
+    <?php echo $this->headStyle(); ?>      
+</head>
+<body data-jsModules="<?php echo $this->jsModules()?>">
+    <input type="hidden" id="baseUrl" value="<?php echo BASE_URL; ?>"/>
+    <input type="hidden" id="imageUrl" value="<?php echo BASE_URL; ?>"/>
+    <input type="hidden" id="contentImageUrl" value="<?php echo BASE_URL; ?>"/>    
+<div id="login">
+    <!-- login -->
+    <div class="title">
+        <h5> Admin</h5>
+        <div class="corner tl"></div>
+        <div class="corner tr"></div>
+    </div>      
+    
+    <?php
+        echo $this->partial('static/messenger_login.phtml');    
+    ?>  
+    
+    <?php echo $this->layout()->content . PHP_EOL; ?>
+
+    <!-- end login -->
+</div>
+
+
+    <?php // SCRIPT AREA -----------------------------------------------------?>
+       <?php
+
+        echo $this->headScript()            
+            ->prependFile($this->cdn('backend.js')->get('b'))
+            ->prependFile($this->cdn('jquery.dataAttr.min.js')->get('jquery'))
+            ->prependFile($this->cdn('stanlemon-jgrowl-tip/js/jquery.jgrowl_minimized.js')->get('jquery-p'))
+            ->prependFile($this->cdn('jquery-1.6.2.min.js')->get('jquery'))                     
+            ;
+        ?>    
+</body>
+</html>

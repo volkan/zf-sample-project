@@ -10,5 +10,10 @@ abstract class My_Controller_Action
     {
         $this->session = new Zend_Session_Namespace('Action');
     }
+    
+    public function getMessenger()
+    {
+        return new My_Module_Messenger();
+    }
    
 }

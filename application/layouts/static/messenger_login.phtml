@@ -1,0 +1,19 @@
+<?php
+$message = $this->messenger()->getMessages();
+?>
+<?php if ($message) : ?> 
+    <div class="messages">    
+        <div class="<?php echo $message['attr']['class']?>" id="<?php echo $message['attr']['id']?>">
+            <div class="image">
+                <img height="32" alt="<?php echo $message['attr']['text']?>" src="<?php echo $this->cdn($message['attr']['icon'])->get('b-icon')?>">
+            </div>
+            <div class="text">
+                <h6><?php echo $message['title']?></h6>
+                <span><?php echo $message['text']?></span>
+            </div>
+            <div class="dismiss">
+                <a href="#<?php echo $message['attr']['id']?>"></a>
+            </div>
+        </div>
+    </div>
+<?php endif;?>
