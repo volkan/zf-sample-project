@@ -7,7 +7,7 @@ abstract class My_Controller_Action
     /**
      * @example
      * $this->session->key = 'value'
-     * @var \Zend_Session_Namespace 
+     * @var Zend_Session_Namespace 
      */
     public $session;
     
