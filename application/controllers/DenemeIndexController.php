@@ -9,7 +9,7 @@ class DenemeIndexController extends My_Controller_Action
         /* Initialize action controller here */
     }
 
-    public function indexAction()
+        public function indexAction()
     {
         //$this->session->deneme = "sss";
         $this->view->degisken1 =  $this->session->deneme;
@@ -20,6 +20,13 @@ class DenemeIndexController extends My_Controller_Action
         
         Zend_Debug::dump($data1, 'data1');
         Zend_Debug::dump($data2, 'data2');
+        
+        
+        $d = $w->ozelSql();
+        Zend_Debug::dump($d, 'ozelSql');
+        
+        $d = $w->zendDbSql();
+        Zend_Debug::dump($d, 'zendDbSql');        
     }
 
 
